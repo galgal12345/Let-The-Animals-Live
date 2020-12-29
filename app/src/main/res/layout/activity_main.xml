@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#DAF3F6">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Let The Animals Live"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="36sp"
+                android:textColor="#79CC7C"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description of business:"
+                android:paddingLeft="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The Let the Animals Live organization was established in 1986 and is a non-profit organization that aims to improve animal protection and promote their rights, including helping animals in times of distress, rehabilitate them and find foster homes for them."
+                android:layout_margin="15dp"
+                android:textColor="@android:color/background_dark"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hours of operation:"
+                android:paddingLeft="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="we are working 9 to 5"
+                android:layout_margin="9dp"
+                android:textColor="@android:color/background_dark"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="15dp">
+
+                <ImageView
+                    android:layout_width="102dp"
+                    android:layout_height="102dp"
+                    android:src="@drawable/logo"
+                    android:layout_margin="15dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:id="@+id/phone_logo"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:paddingTop="8dp"
+                        android:src="@drawable/phone" />
+
+                    <ImageView
+                        android:id="@+id/email_logo"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/phone_logo"
+                        android:paddingTop="8dp"
+                        android:src="@drawable/at" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/email_logo"
+                        android:src="@drawable/globe"
+                        android:paddingTop="8dp"/>
+
+                </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="15dp">
+
+                        <TextView
+                            android:id="@+id/txt_our_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="our phone number company:"
+                            android:paddingLeft="5dp"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/txt_phone_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="+972 077 - 6549814"
+                            android:textColor="@android:color/background_dark"
+                            android:paddingLeft="6dp"
+                            android:layout_below="@id/txt_our_phone"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_our_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="our email address:"
+                            android:layout_below="@id/txt_phone_number"
+                            android:paddingLeft="5dp"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/txt_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="lettheanimalslive@gmail.com"
+                            android:paddingLeft="6dp"
+                            android:layout_below="@id/txt_our_email"
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_web"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="our website:"
+                            android:layout_below="@id/txt_email"
+                            android:paddingLeft="5dp"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_web"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="-2dp"
+                            android:layout_marginEnd="0dp"
+                            android:paddingLeft="6dp"
+                            android:text="lettheanimalslive.com"
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cat_on_gress"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
